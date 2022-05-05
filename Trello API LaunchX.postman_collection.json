@@ -1,0 +1,233 @@
+{
+	"info": {
+		"_postman_id": "88f1af92-72d0-4f6e-af01-f1ad93bfd3ea",
+		"name": "Trello API LaunchX",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Board",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/?name=ApiKeyBoard2&key=&token=",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "ApiKeyBoard2"
+						},
+						{
+							"key": "key",
+							"value": "insert_api_key"
+						},
+						{
+							"key": "token",
+							"value": "insert_token"
+						},
+						{
+							"key": "prefs_background",
+							"value": "\"orange\"",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Lists of Cards by Board ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/627338b25c09673b06da0d6a/lists?key=&token=",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"627338b25c09673b06da0d6a",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "insert_api_key"
+						},
+						{
+							"key": "token",
+							"value": "insert_token"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Board by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/627338b25c09673b06da0d6a?key=&token=",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"627338b25c09673b06da0d6a"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "insert_api_key"
+						},
+						{
+							"key": "token",
+							"value": "insert_token"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Card By List Id ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/cards?idList=62733a1a9b99868b8ac6fdb6&key=&token=&name=Card nueva launchX",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards"
+					],
+					"query": [
+						{
+							"key": "idList",
+							"value": "62733a1a9b99868b8ac6fdb6"
+						},
+						{
+							"key": "key",
+							"value": "insert_api_key"
+						},
+						{
+							"key": "token",
+							"value": "insert_token"
+						},
+						{
+							"key": "name",
+							"value": "Card nueva launchX"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a card by Card id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/cards/6273521f8d792c101d7db985?key=&token=",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards",
+						"6273521f8d792c101d7db985"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "insert_api_key"
+						},
+						{
+							"key": "token",
+							"value": "insert_token"
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update a card title",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/cards/627353546d9621519ecfec14?key=&token=&name=Actualizo el nombre! con PUT",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards",
+						"627353546d9621519ecfec14"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "insert_api_key"
+						},
+						{
+							"key": "token",
+							"value": "insert_token"
+						},
+						{
+							"key": "name",
+							"value": "Actualizo el nombre! con PUT"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "boardId",
+			"value": "62625f5f78af597b71f391de"
+		}
+	]
+}
