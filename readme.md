@@ -2,12 +2,6 @@
 
 Para utilizar el api rest de trello es necesario que tengas una cuenta en Trello: [https://trello.com/](https://trello.com/)
 
-```mermaid
-graph TD
-A[Hola!] -->|Get money| B(Go shopping)
-B --> C{Let me think}
-C -->|One| D[Laptop]
-C -->|Two| E[iPhone]
-C -->|Three| F[fa:fa-car Car]
-```
+Para consultar la documentación de la API visita el siguiente [link](https://documenter.getpostman.com/view/20744732/UyxbsAU6)
 
+Abre el archivo en POSTMAN para probar.
